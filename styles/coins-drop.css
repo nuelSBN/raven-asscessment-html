@@ -1,0 +1,83 @@
+.crypto__card {
+  position: relative;
+  height: fit-content;
+}
+.coins-dropdown {
+  /* position: absolute; */
+  left: 0;
+  top: 100%;
+  padding: 10px;
+  background-color: inherit;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 999;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.hide-coins {
+  transition: 0.4s;
+  top: -500%;
+}
+.coins-dropdown .h-p {
+  color: white;
+  text-transform: capitalize;
+  margin-block: 10px;
+}
+.coins-dropdown .search-market {
+  padding-left: 10px;
+  border: 1px solid #717171;
+  border-radius: 5px;
+}
+.search-market input {
+  background-color: inherit;
+  color: white;
+  margin: 5px;
+  padding: 2px 4px;
+  border: none;
+  outline: none;
+}
+.c-coin {
+  margin-block: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #717171;
+  border-top: 1px solid #717171;
+}
+.c-coin div {
+  margin-right: 10px;
+  width: 30px;
+  height: 20px;
+  border-radius: 20px;
+  padding: 13px 20px;
+}
+.c-coin .active {
+  background-color: #2d353e;
+}
+.c-coin div:hover {
+  background-color: #2d353e;
+}
+.c-coin p {
+  color: #a7b1bc;
+}
+.c-coin p:hover,
+.c-coin .active {
+  color: white;
+}
+
+.btc-usdt {
+  color: #a7b1bc;
+}
+.btc-usdt .each-coin {
+  margin-block: 10px;
+}
+.btc-usdt .amount p {
+  color: #a7b1bc;
+}
+.btc-usdt .amount p:last-child {
+  color: #25c26e;
+}
+
+@media (max-width: 800px) {
+  .coins-dropdown {
+    font-size: 14px;
+  }
+}

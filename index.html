@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sisyphus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="" class="header_logo-image" />
+      </div>
+      <div class="header__right">
+        <div>
+          <img src="images/user.svg" alt="" />
+        </div>
+        <div>
+          <img src="images/line.svg" alt="" />
+        </div>
+        <div>
+          <img src="images/menu.svg" alt="" id="menu_toggler" />
+        </div>
+      </div>
+      <ul class="header__nav" id="header__nav">
+        <li class="header__nav-item"><a href="#">Exchange</a></li>
+        <li class="header__nav-item"><a href="#">Wallets</a></li>
+        <li class="header__nav-item"><a href="#">Roqqu Hub</a></li>
+        <li class="header__nav-item"><a href="#">Log out</a></li>
+      </ul>
+      <div class="header__large">
+        <div class="header__large-left">
+          <div class="header__large-left-logo">
+            <img src="./images/logo.svg" alt="" class="" />
+          </div>
+          <ul class="header__large-left-nav">
+            <li class="header__large-left-navitem">
+              <a href="#">Exchange</a>
+            </li>
+            <li class="header__large-left-navitem">
+              <a href="#">Wallets</a>
+            </li>
+            <li class="header__large-left-navitem">
+              <a href="#">Roqqu Hub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__large-right">
+          <div class="header__large-profile">
+            <img src="./images/user.svg" alt="" />
+            <span>Olakunle Te...</span>
+            <img src="{arrowright}" alt="" />
+          </div>
+          <div>
+            <img src="./images/line.svg" alt="" />
+          </div>
+          <div>
+            <img src="./images/sign-out.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="crypto__card">
+      <div class="crypto__card-top">
+        <div class="crypto__card-top-left">
+          <img src="images/sample-crypto.svg" alt="" />
+          <span class="crypto__card-top-left-text">BTC/USDT</span>
+          <img src="images/dropdown.svg" alt="" class="coin-drop" />
+        </div>
+        <div class="crypto__card-top-right">
+          <span class="crypto__card-top-right-text">$20,634</span>
+        </div>
+      </div>
+      <div class="crypto__card-bottom">
+        <div class="crypto__card-bottom-item">
+          <div class="crypto__card-bottom-item-top">
+            <img src="images/clock.svg" alt="" />
+            <span>24h change</span>
+          </div>
+          <div class="crypto__card-bottom-item-bottom">
+            <span>520.80 +1.25%</span>
+          </div>
+        </div>
+        <!-- <div class="crypto__card-bottom-divider"></div> -->
+        <div class="crypto__card-bottom-item">
+          <div class="crypto__card-bottom-item-top">
+            <img src="images/clock.svg" alt="" />
+            <span>24h high</span>
+          </div>
+          <div class="crypto__card-bottom-item-bottom">
+            <span>520.80 +1.25%</span>
+          </div>
+        </div>
+
+        <div class="crypto__card-bottom-item">
+          <div class="crypto__card-bottom-item-top">
+            <img src="images/clock.svg" alt="" />
+            <span>24h low</span>
+          </div>
+          <div class="crypto__card-bottom-item-bottom">
+            <span>520.80 +1.25%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dami Coin Dropdown -->
+      <div class="coins-dropdown hide-coins hide">
+        <p class="h-p">select market</p>
+        <div class="search-market flex items-center">
+          <img src="./images/Search.svg" alt="" width="15" height="15" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="flex c-coin">
+          <div class="flex items-center justify-center active"><p>All</p></div>
+          <div class="flex items-center justify-center"><p>USD</p></div>
+          <div class="flex items-center justify-center"><p>BTC</p></div>
+        </div>
+
+        <div class="btc-usdt">
+          <!-- individual coin -->
+          <div class="each-coin flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="images/sample-crypto.svg" alt="" class="mx-2" />
+              <span class="" mx-2>BTC-USDT</span>
+            </div>
+            <div class="flex amount">
+              <p class="mx-2">$23,234.6</p>
+              <p class="mx-2">+0.005%</p>
+            </div>
+          </div>
+          <div class="each-coin flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="images/sample-crypto.svg" alt="" class="mx-2" />
+              <span class="" mx-2>BTC-USDT</span>
+            </div>
+            <div class="flex amount">
+              <p class="mx-2">$23,234.6</p>
+              <p class="mx-2">+0.005%</p>
+            </div>
+          </div>
+          <div class="each-coin flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="images/sample-crypto.svg" alt="" class="mx-2" />
+              <span class="" mx-2>BTC-USDT</span>
+            </div>
+            <div class="flex amount">
+              <p class="mx-2">$23,234.6</p>
+              <p class="mx-2">+0.005%</p>
+            </div>
+          </div>
+          <div class="each-coin flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="images/sample-crypto.svg" alt="" class="mx-2" />
+              <span class="" mx-2>BTC-USDT</span>
+            </div>
+            <div class="flex amount">
+              <p class="mx-2">$23,234.6</p>
+              <p class="mx-2">+0.005%</p>
+            </div>
+          </div>
+          <div class="each-coin flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="images/sample-crypto.svg" alt="" class="mx-2" />
+              <span class="" mx-2>BTC-USDT</span>
+            </div>
+            <div class="flex amount">
+              <p class="mx-2">$23,234.6</p>
+              <p class="mx-2">+0.005%</p>
+            </div>
+          </div>
+          <div class="each-coin flex justify-between items-center">
+            <div class="flex items-center">
+              <img src="images/sample-crypto.svg" alt="" class="mx-2" />
+              <span class="" mx-2>BTC-USDT</span>
+            </div>
+            <div class="flex amount">
+              <p class="mx-2">$23,234.6</p>
+              <p class="mx-2">+0.005%</p>
+            </div>
+          </div>
+          <!-- individual coin -->
+        </div>
+      </div>
+      <!-- Coin Dropdown -->
+    </section>
+
+    <section class="main__content">
+      <div class="main__content-tab">
+        <div class="main__content-tab-links active charts">Charts</div>
+        <div class="main__content-tab-links orderbook" id="orderbook">
+          Orderbook
+        </div>
+        <div class="main__content-tab-links recent-trade">Recent trades</div>
+      </div>
+      <div class="main__content-filter-component">
+        <div class="main_content-filters">
+          <span> Time </span>
+          <button>1H</button>
+          <button>2H</button>
+          <button>4H</button>
+          <button class="active">1D</button>
+          <button>1W</button>
+          <button>1M</button>
+          <button><img src="images/dropdown.svg" alt="" /></button>
+          <button><img src="images/candle-chart.svg" alt="" /></button>
+          <span>Fx Indicators</span>
+        </div>
+        <canvas
+          class="main_content-candle-chart"
+          id="candlestick-chart"
+        ></canvas>
+        <!-- <div class="main__content-action-btns">
+          <button>Buy</button>
+          <button>Sell</button>
+        </div> -->
+      </div>
+      <div class="contain-orders hide">
+        <div class="main__content-orders-component">
+          <div class="main_content-orders">
+            <div class="main_content-orders-left">
+              <button>
+                <img src="images/rgb.svg" alt="" />
+              </button>
+              <button>
+                <img src="images/ggg.svg" alt="" />
+              </button>
+              <button>
+                <img src="images/rgg.svg" alt="" />
+              </button>
+            </div>
+            <div class="main_content-orders-right">
+              <h1>10</h1>
+              <img src="images/dropdown.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="main_content-table">
+          <div class="main__content-table-header">
+            <div>
+              <p class="">Price</p>
+              <span>(USDT)</span>
+            </div>
+            <div>
+              <p>Amounts</p>
+              <span>(BTC)</span>
+            </div>
+            <div>
+              <p>total</p>
+            </div>
+          </div>
+
+          <div class="main__content-table-body">
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+          </div>
+        </div>
+        <div class="main__content-order-price">
+          <p>36,641.20</p>
+          <img src="images/arrow-up.svg" alt="" />
+          <p>36,641.20</p>
+        </div>
+      </div>
+      <div class="main__content-action-btns">
+        <button class="buy-coin">Buy</button>
+        <button class="sell-coin">Sell</button>
+      </div>
+    </section>
+
+    <div class="orders_section">
+      <div class="orders_section-tab">
+        <div class="orders_section-links active">Open Orders</div>
+        <div class="orders_section-links">Position</div>
+        <div class="orders_section-links">Order History</div>
+        <div class="orders_section-links">Trade History</div>
+      </div>
+      <div class="orders_section-content">
+        <h1>No Open Orders</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur <br />
+          adipiscing elit. Id pulvinar nullam sit imperdiet <br />
+          pulvinar.
+        </p>
+      </div>
+    </div>
+    <div class="buy__modal hide">
+      <div class="buy__modal-content">
+        <div class="buy__modal-content-top">
+          <button class="active">buy</button>
+          <button>sell</button>
+        </div>
+        <div class="buy__modal-content-middle">
+          <button class="active">limit</button>
+          <button>Market</button>
+          <button>Stop-Limit</button>
+        </div>
+        <div class="form__control">
+          <p>
+            <span>Limit price</span>
+            <span><img src="images/info.svg" alt="" /></span>
+          </p>
+          <input type="text" placeholder="0.00USD" />
+        </div>
+        <div class="form__control">
+          <p>
+            <span>Amount</span>
+            <span><img src="images/info.svg" alt="" /></span>
+          </p>
+          <input type="text" placeholder="0.00USD" />
+        </div>
+        <div class="form__control">
+          <p>
+            <span>Type</span>
+            <span><img src="images/info.svg" alt="" /></span>
+          </p>
+          <select name="" id="">
+            <option value="1">Good till cancelled</option>
+            <option value="1">Fill or kill</option>
+            <option value="1">Good till date</option>
+          </select>
+        </div>
+
+        <div class="flex buy-checkbox">
+          <input type="checkbox" name="" id="" />
+          <p>Post Only</p>
+          <span><img src="images/info.svg" alt="" /></span>
+        </div>
+
+        <div class="flex justify-between buy_total">
+          <span class="mx-2">Total</span>
+          <span class="mx-2">0.00</span>
+        </div>
+        <button class="btn_buy_btc">Buy BTC</button>
+        <div class="account-value">
+          <div class="account-value-h">
+            <span>Total account value</span>
+            <div>
+              <span>NGN</span>
+              <img src="images/dropdown.svg" alt="" />
+            </div>
+          </div>
+          <p class="buy-total">0.00</p>
+          <div class="account-value-h">
+            <span>Open Orders</span>
+            <div>
+              <span>Available</span>
+              <img src="images/dropdown.svg" alt="" />
+            </div>
+          </div>
+          <p class="buy-total">0.00</p>
+          <div class="buy-deposit">Deposit</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

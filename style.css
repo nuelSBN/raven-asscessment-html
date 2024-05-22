@@ -1,0 +1,218 @@
+@import url("styles/header.css");
+@import url("styles/crypto-card.css");
+@import url("styles/main-content.css");
+@import url("styles/orders.css");
+@import url("styles/coins-drop.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  list-style: none;
+}
+
+
+
+
+.w-full {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.mx-2 {
+  margin-inline: 5px;
+}
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+
+body {
+  background-color: #1c2127;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buy__modal {
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* z-index: 999; */
+}
+.show_buy__modal {
+  display: flex;
+  align-items: flex-end;
+}
+
+.buy__modal-content {
+  transition: 1s;
+  position: relative;
+  height: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #1c2127;
+  width: 100%;
+  border: 1px solid #262932;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.buy__modal-content-top {
+  height: 32px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1f24;
+}
+
+.buy__modal-content-top > button {
+  width: 48%;
+  border-radius: 8px;
+  height: 28px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  line-height: 16px;
+}
+
+.buy__modal-content-top > button.active {
+  border: 1px solid #25c26e;
+}
+
+.buy__modal-content-middle {
+  height: 28px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.buy__modal-content-middle button {
+  padding: 6px 12px;
+  border-radius: 100px;
+  background-color: #353945;
+  text-transform: capitalize;
+}
+.buy_total {
+  width: 90%;
+  color: white;
+}
+.btn_buy_btc {
+  background: linear-gradient(to right, #483beb, #7847e1, #dd568d);
+  padding: 13px;
+  width: 90%;
+  border-radius: 7px;
+  color: white;
+}
+.account-value {
+  width: 90%;
+  padding-block: 15px;
+  border-top: 1px solid #353945;
+}
+.account-value-h {
+  font-size: 13px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+.buy-total {
+  font-size: 20px;
+  color: white;
+  margin-block: 10px;
+}
+.buy-deposit {
+  padding: 13px;
+  background-color: #2764ff;
+  color: white;
+  border-radius: 8px;
+  width: fit-content;
+}
+.form__control {
+  height: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #373b3f;
+  padding: 13px 16px;
+  margin-right: auto;
+}
+.buy-checkbox {
+  width: 100%;
+  margin-left: 35px;
+  color: white;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.buy-checkbox p {
+  margin-inline: 8px;
+}
+.form__control p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #a7b1bc;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form__control input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 70px;
+  color: #a7b1bc;
+  text-align: end;
+}
+
+.form__control select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: fit-content;
+  color: #a7b1bc;
+  text-align: end;
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+}
