@@ -8,7 +8,8 @@
   gap: 20px;
 }
 
-.main__content-tab {
+.main__content-tab,
+.main__content-tab__order {
   width: 100%;
   background-color: #1c2127;
   height: 40px;
@@ -157,7 +158,8 @@
   gap: 20px;
 }
 
-.main_content-table {
+.main_content-table,
+.main_content-table-mob {
   color: #a7b1bc;
   font-weight: 500;
   line-height: 16px;

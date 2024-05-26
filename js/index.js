@@ -10,12 +10,12 @@ dropIcon.addEventListener("click", () => {
 });
 
 buyCoin.addEventListener("click", () => {
-  buyModal.classList.remove("hide");
+  buyModal.classList.remove("hide-buy__modal");
   buyModal.classList.add("show_buy__modal");
 });
 
 buyModal.addEventListener("click", (e) => {
-  buyModal.classList.add("hide");
+  buyModal.classList.add("hide-buy__modal");
   buyModal.classList.remove("show_buy__modal");
 });
 buyModal.firstElementChild.addEventListener("click", (e) => {
@@ -33,8 +33,8 @@ const orderbookStatus = document.querySelector(".contain-orders");
 // const recentBookStatusButton = document.querySelector(".recent-book");
 
 orderGraphStatusButton.addEventListener("click", () => {
-  orderGraphStatus.classList.remove("hide");
-  orderbookStatus.classList.add("hide");
+  orderGraphStatus.classList.remove("hide-buy__modal");
+  orderbookStatus.classList.add("hide-buy__modal");
   orderGraphStatusButton.classList.add("active");
   orderbookStatusButton.classList.remove("active");
 
@@ -42,8 +42,8 @@ orderGraphStatusButton.addEventListener("click", () => {
 });
 
 orderbookStatusButton.addEventListener("click", () => {
-  orderGraphStatus.classList.add("hide");
-  orderbookStatus.classList.remove("hide");
+  orderGraphStatus.classList.add("hide-buy__modal");
+  orderbookStatus.classList.remove("hide-buy__modal");
   orderGraphStatusButton.classList.remove("active");
 
   orderbookStatusButton.classList.add("active");

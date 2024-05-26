@@ -105,10 +105,29 @@
         <div class="crypto__card-bottom-item">
           <div class="crypto__card-bottom-item-top">
             <img src="images/clock.svg" alt="" />
-            <span>24h low</span>
+            <span class="__white">24h high</span>
           </div>
           <div class="crypto__card-bottom-item-bottom">
-            <span>520.80 +1.25%</span>
+            <span class="__white">520.80 +1.25%</span>
+          </div>
+        </div>
+
+        <div class="crypto__card-bottom-item">
+          <div class="crypto__card-bottom-item-top">
+            <img src="images/clock.svg" alt="" />
+            <span class="__white">24h low</span>
+          </div>
+          <div class="crypto__card-bottom-item-bottom">
+            <span class="__white">520.80 +1.25%</span>
+          </div>
+        </div>
+        <div class="crypto__card-bottom-item">
+          <div class="crypto__card-bottom-item-top">
+            <img src="images/clock.svg" alt="" />
+            <span class="__white">24h low</span>
+          </div>
+          <div class="crypto__card-bottom-item-bottom">
+            <span class="__white">520.80 +1.25%</span>
           </div>
         </div>
       </div>
@@ -194,37 +213,142 @@
       <!-- Coin Dropdown -->
     </section>
 
-    <section class="main__content">
-      <div class="main__content-tab">
-        <div class="main__content-tab-links active charts">Charts</div>
-        <div class="main__content-tab-links orderbook" id="orderbook">
-          Orderbook
+    <section class="desktop__view">
+      <section class="main__content">
+        <div class="main__content-tab">
+          <div class="main__content-tab-links active charts">Charts</div>
+          <div class="main__content-tab-links orderbook" id="orderbook">
+            Orderbook
+          </div>
+          <div class="main__content-tab-links recent-trade">Recent trades</div>
         </div>
-        <div class="main__content-tab-links recent-trade">Recent trades</div>
-      </div>
-      <div class="main__content-filter-component">
-        <div class="main_content-filters">
-          <span> Time </span>
-          <button>1H</button>
-          <button>2H</button>
-          <button>4H</button>
-          <button class="active">1D</button>
-          <button>1W</button>
-          <button>1M</button>
-          <button><img src="images/dropdown.svg" alt="" /></button>
-          <button><img src="images/candle-chart.svg" alt="" /></button>
-          <span>Fx Indicators</span>
-        </div>
-        <canvas
-          class="main_content-candle-chart"
-          id="candlestick-chart"
-        ></canvas>
-        <!-- <div class="main__content-action-btns">
+        <div class="main__content-filter-component mobile">
+          <div class="main_content-filters">
+            <span> Time </span>
+            <button>1H</button>
+            <button>2H</button>
+            <button>4H</button>
+            <button class="active">1D</button>
+            <button>1W</button>
+            <button>1M</button>
+            <button><img src="images/dropdown.svg" alt="" /></button>
+            <button><img src="images/candle-chart.svg" alt="" /></button>
+            <span>Fx Indicators</span>
+          </div>
+          <canvas
+            class="main_content-candle-chart"
+            id="candlestick-chart"
+          ></canvas>
+          <!-- <div class="main__content-action-btns">
           <button>Buy</button>
           <button>Sell</button>
         </div> -->
-      </div>
-      <div class="contain-orders hide">
+        </div>
+
+        <div class="contain-orders hide-buy__modal hide_desk">
+          <div class="main__content-orders-component">
+            <div class="main_content-orders">
+              <div class="main_content-orders-left">
+                <button>
+                  <img src="images/rgb.svg" alt="" />
+                </button>
+                <button>
+                  <img src="images/ggg.svg" alt="" />
+                </button>
+                <button>
+                  <img src="images/rgg.svg" alt="" />
+                </button>
+              </div>
+              <div class="main_content-orders-right">
+                <h1>10</h1>
+                <img src="images/dropdown.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="main_content-table">
+            <div class="main__content-table-header">
+              <div>
+                <p class="">Price</p>
+                <span>(USDT)</span>
+              </div>
+              <div>
+                <p>Amounts</p>
+                <span>(BTC)</span>
+              </div>
+              <div>
+                <p>total</p>
+              </div>
+            </div>
+
+            <div class="main__content-table-body">
+              <div>
+                <p>36920.12</p>
+                <p>0.758965</p>
+                <p>28,020.98</p>
+              </div>
+              <div>
+                <p>36920.12</p>
+                <p>0.758965</p>
+                <p>28,020.98</p>
+              </div>
+              <div>
+                <p>36920.12</p>
+                <p>0.758965</p>
+                <p>28,020.98</p>
+              </div>
+              <div>
+                <p>36920.12</p>
+                <p>0.758965</p>
+                <p>28,020.98</p>
+              </div>
+              <div>
+                <p>36920.12</p>
+                <p>0.758965</p>
+                <p>28,020.98</p>
+              </div>
+            </div>
+          </div>
+          <div class="main__content-order-price">
+            <p>36,641.20</p>
+            <img src="images/arrow-up.svg" alt="" />
+            <p>36,641.20</p>
+          </div>
+          <div class="main__content-table-body table-body__green">
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+            <div>
+              <p>36920.12</p>
+              <p>0.758965</p>
+              <p>28,020.98</p>
+            </div>
+          </div>
+        </div>
+        <div class="main__content-action-btns">
+          <button class="buy-coin">Buy</button>
+          <button class="sell-coin">Sell</button>
+        </div>
+      </section>
+
+      <div class="contain-orders-mob hide__mob">
         <div class="main__content-orders-component">
           <div class="main_content-orders">
             <div class="main_content-orders-left">
@@ -244,7 +368,7 @@
             </div>
           </div>
         </div>
-        <div class="main_content-table">
+        <div class="main_content-table-mob">
           <div class="main__content-table-header">
             <div>
               <p class="">Price</p>
@@ -292,10 +416,103 @@
           <img src="images/arrow-up.svg" alt="" />
           <p>36,641.20</p>
         </div>
+        <div class="main__content-table-body table-body__green">
+          <div>
+            <p>36920.12</p>
+            <p>0.758965</p>
+            <p>28,020.98</p>
+          </div>
+          <div>
+            <p>36920.12</p>
+            <p>0.758965</p>
+            <p>28,020.98</p>
+          </div>
+          <div>
+            <p>36920.12</p>
+            <p>0.758965</p>
+            <p>28,020.98</p>
+          </div>
+          <div>
+            <p>36920.12</p>
+            <p>0.758965</p>
+            <p>28,020.98</p>
+          </div>
+          <div>
+            <p>36920.12</p>
+            <p>0.758965</p>
+            <p>28,020.98</p>
+          </div>
+        </div>
       </div>
-      <div class="main__content-action-btns">
-        <button class="buy-coin">Buy</button>
-        <button class="sell-coin">Sell</button>
+
+      <div class="buy__modal hide-buy__modal">
+        <div class="buy__modal-content">
+          <div class="buy__modal-content-top">
+            <button class="active">buy</button>
+            <button>sell</button>
+          </div>
+          <div class="buy__modal-content-middle">
+            <button class="active">limit</button>
+            <button>Market</button>
+            <button>Stop-Limit</button>
+          </div>
+          <div class="form__control">
+            <p>
+              <span>Limit price</span>
+              <span><img src="images/info.svg" alt="" /></span>
+            </p>
+            <input type="text" placeholder="0.00USD" />
+          </div>
+          <div class="form__control">
+            <p>
+              <span>Amount</span>
+              <span><img src="images/info.svg" alt="" /></span>
+            </p>
+            <input type="text" placeholder="0.00USD" />
+          </div>
+          <div class="form__control">
+            <p>
+              <span>Type</span>
+              <span><img src="images/info.svg" alt="" /></span>
+            </p>
+            <select name="" id="">
+              <option value="1">Good till cancelled</option>
+              <option value="1">Fill or kill</option>
+              <option value="1">Good till date</option>
+            </select>
+          </div>
+
+          <div class="flex buy-checkbox">
+            <input type="checkbox" name="" id="" />
+            <p>Post Only</p>
+            <span><img src="images/info.svg" alt="" /></span>
+          </div>
+
+          <div class="flex justify-between buy_total">
+            <span class="mx-2">Total</span>
+            <span class="mx-2">0.00</span>
+          </div>
+          <button class="btn_buy_btc">Buy BTC</button>
+          <div class="account-value">
+            <div class="account-value-h">
+              <span>Total account value</span>
+              <div>
+                <span>NGN</span>
+                <img src="images/dropdown.svg" alt="" />
+              </div>
+            </div>
+            <p class="buy-total">0.00</p>
+            <div class="account-value-h">
+              <span>Open Orders</span>
+              <div>
+                <span>Available</span>
+                <img src="images/dropdown.svg" alt="" />
+              </div>
+            </div>
+            <p class="buy-total">0.00</p>
+            <div class="buy-deposit">Deposit</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -315,77 +532,8 @@
         </p>
       </div>
     </div>
-    <div class="buy__modal hide">
-      <div class="buy__modal-content">
-        <div class="buy__modal-content-top">
-          <button class="active">buy</button>
-          <button>sell</button>
-        </div>
-        <div class="buy__modal-content-middle">
-          <button class="active">limit</button>
-          <button>Market</button>
-          <button>Stop-Limit</button>
-        </div>
-        <div class="form__control">
-          <p>
-            <span>Limit price</span>
-            <span><img src="images/info.svg" alt="" /></span>
-          </p>
-          <input type="text" placeholder="0.00USD" />
-        </div>
-        <div class="form__control">
-          <p>
-            <span>Amount</span>
-            <span><img src="images/info.svg" alt="" /></span>
-          </p>
-          <input type="text" placeholder="0.00USD" />
-        </div>
-        <div class="form__control">
-          <p>
-            <span>Type</span>
-            <span><img src="images/info.svg" alt="" /></span>
-          </p>
-          <select name="" id="">
-            <option value="1">Good till cancelled</option>
-            <option value="1">Fill or kill</option>
-            <option value="1">Good till date</option>
-          </select>
-        </div>
 
-        <div class="flex buy-checkbox">
-          <input type="checkbox" name="" id="" />
-          <p>Post Only</p>
-          <span><img src="images/info.svg" alt="" /></span>
-        </div>
-
-        <div class="flex justify-between buy_total">
-          <span class="mx-2">Total</span>
-          <span class="mx-2">0.00</span>
-        </div>
-        <button class="btn_buy_btc">Buy BTC</button>
-        <div class="account-value">
-          <div class="account-value-h">
-            <span>Total account value</span>
-            <div>
-              <span>NGN</span>
-              <img src="images/dropdown.svg" alt="" />
-            </div>
-          </div>
-          <p class="buy-total">0.00</p>
-          <div class="account-value-h">
-            <span>Open Orders</span>
-            <div>
-              <span>Available</span>
-              <img src="images/dropdown.svg" alt="" />
-            </div>
-          </div>
-          <p class="buy-total">0.00</p>
-          <div class="buy-deposit">Deposit</div>
-        </div>
-      </div>
-    </div>
-
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
